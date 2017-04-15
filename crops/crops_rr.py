@@ -62,9 +62,20 @@ for i in range(len(k)):
 
 def fill_holes_method(m,k,row):
     # Variables we need
-    e_h = row
-    # Variables we need
-    v = np.dot(m,k) #V
+    v = np.dot(m,k[0]) #V
+    e_h = elimination_matrix(row)
+
+    v_1 = np.dot(v,np.transpose(np.array(e_h)))
+    b_1 = filter(lambda x: x != '?', row)
+
+    x_concept = np.dot(inverse_values_array(v_1), b_1)
+
+    d_val = np.dot(x_concept, v)
+
+    pdb.set_trace()
+    
+    result = (np.dot(np.transpose(b_1), np.transpose(centered_version(e_h))) )
+
 
 def missing_holes(row):
     total_count, positions = 0, []
@@ -85,6 +96,20 @@ def elimination_matrix(row):
             map(lambda x: x.insert(position, 0.0), e_matrix)
     return e_matrix
 
-rrow = [1,'?',2,'?',3]
+def inverse_values_array(arr):
+    return map(lambda x: 1/x, arr)
+
+def centered_version(arr):
+    arr_mean = np.mean(arr, axis=0)
+    return np.subtract(arr, xmean)
+
+rrow = [1,'?',2,3]
 e_matrix = elimination_matrix(rrow)
-pdb.set_trace()
+
+M = len(x[0])
+
+fill_holes_method(M, k_positions, rrow)
+
+
+### BUG
+### K must be refered as k[0]
