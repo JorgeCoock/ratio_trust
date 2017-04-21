@@ -57,9 +57,10 @@ while np.sum(k) < eigthy:
 k_positions = []
 for i in range(len(k)):
     k_positions.append(eig_vec[i])
+
+
 # ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-
-
+# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
 def fill_holes_method(m,k,row):
     # Variables we need
     v = np.dot(m,k[0]) #V
@@ -73,7 +74,6 @@ def fill_holes_method(m,k,row):
     x_concept = np.dot(inverse_values_array(v_1), b_1)
 
     d_result = x_concept * v
-
 
     #result_first_part = np.dot(np.transpose(b_1), centered_version(e_h))
     result_first_part = np.dot(np.transpose(b_1), np.transpose(centered_version(np.transpose(e_h))))
@@ -101,6 +101,8 @@ def elimination_matrix(row):
         for position_index, position in enumerate(holes['positions']):
             map(lambda x: x.insert(position, 0.0), e_matrix)
     return e_matrix
+# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
+# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
 
 def inverse_values_array(arr):
     return np.divide(1,arr)
@@ -109,6 +111,7 @@ def centered_version(arr):
     arr_mean = np.mean(arr, axis=0)
     return np.subtract(arr, arr_mean)
 
+# Examples #
 rrow = ['?',6.65500000e+03,'?','?']
 
 e_matrix = elimination_matrix(rrow)
@@ -116,7 +119,7 @@ e_matrix = elimination_matrix(rrow)
 M = len(x[0])
 
 fill_holes_method(M, k_positions, rrow)
-
+# Examples #
 
 ### BUG
 ### K must be refered as k[0]
