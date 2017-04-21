@@ -75,8 +75,9 @@ def fill_holes_method(m,k,row):
     d_result = x_concept * v
 
 
-    result_first_part = np.dot(np.transpose(b_1), centered_version(e_h))
-    wea = [[0.0],[1.0],[0.0],[0.0]]
+    #result_first_part = np.dot(np.transpose(b_1), centered_version(e_h))
+    result_first_part = np.dot(np.transpose(b_1), np.transpose(centered_version(np.transpose(e_h))))
+
     result_second_part = np.dot(d_result, np.transpose(e_h))
 
     pdb.set_trace()
@@ -108,7 +109,7 @@ def centered_version(arr):
     arr_mean = np.mean(arr, axis=0)
     return np.subtract(arr, arr_mean)
 
-rrow = [4.0,6.65500000e+03,'?','?']
+rrow = ['?',6.65500000e+03,'?','?']
 
 e_matrix = elimination_matrix(rrow)
 
