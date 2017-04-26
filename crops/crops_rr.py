@@ -1,7 +1,9 @@
 import csv
 import numpy as np
-from numpy import linalg as LA
 import pdb
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from rr_generator import rr_generator
 
 with open('crops.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
@@ -18,108 +20,9 @@ for index, value in enumerate(data):
 def myFloat(myList):
     return map(float, myList)
 
-x = map(myFloat, dataset)
+matrix = map(myFloat, dataset)
 
-x = np.array(x)# X normalized as Numpy array, here, the good thing starts
+values,rules = rr_generator(matrix)
 
-xmean = np.mean(x, axis=0)
-
-xc = np.subtract(x, xmean)#XC
-
-xtc = xc.transpose()#Transpose of XC
-
-c = np.dot(xtc, xc) #C MATRIX, this is the eig val and eig vec matrix
-
-eig_val, eig_vec = LA.eig(c)
-
-# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-# Covariance
-cc = np.cov(c)
-
-# Selects the best eigen vectors, 85%
-sum_eigen_val = np.sum(eig_val)
-eigthy = sum_eigen_val * 85 / 100 # 85% of eigenvectors sum
-
-#Function that search for the max closest number from a list
-takeClosest = lambda collection,num:max(collection,key=lambda x:(x-num))
-
-k = [] #eigenvalues that sum 85% of  the eigenvectors
-Z = []
-print eigthy
-while np.sum(k) < eigthy:
-    Z = set(eig_val) - set(k)
-    print Z
-    rest = eigthy - np.sum(k)
-    print rest
-    k.append(takeClosest(Z,rest))
-    print k
-
-k_positions = []
-for i in range(len(k)):
-    k_positions.append(eig_vec[i])
-
-
-# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-def fill_holes_method(m,k,row):
-    # Variables we need
-    v = np.dot(m,k[0]) #V
-    e_h = elimination_matrix(row)
-
-    v_1 = np.dot(v,np.transpose(np.array(e_h)))
-
-    b_1 = filter(lambda x: x != '?', row)
-    b_1 = map(lambda x: [x], b_1)
-
-    x_concept = np.dot(inverse_values_array(v_1), b_1)
-
-    d_result = x_concept * v
-
-    #result_first_part = np.dot(np.transpose(b_1), centered_version(e_h))
-    result_first_part = np.dot(np.transpose(b_1), np.transpose(centered_version(np.transpose(e_h))))
-
-    result_second_part = np.dot(d_result, np.transpose(e_h))
-
-    pdb.set_trace()
-
-
-def missing_holes(row):
-    total_count, positions = 0, []
-    for index, record in enumerate(row):
-        if record == '?':
-            total_count += 1
-            positions.append(index)
-    return {'count': total_count, 'positions': positions}
-
-def elimination_matrix(row):
-    holes = missing_holes(row)
-    if holes['count'] == 0:
-        e_matrix = np.identity(len(row))
-    else:
-        e_matrix = np.identity(len(row)-holes['count'])
-        e_matrix = e_matrix.tolist()
-        for position_index, position in enumerate(holes['positions']):
-            map(lambda x: x.insert(position, 0.0), e_matrix)
-    return e_matrix
-# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-# ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
-
-def inverse_values_array(arr):
-    return np.divide(1,arr)
-
-def centered_version(arr):
-    arr_mean = np.mean(arr, axis=0)
-    return np.subtract(arr, arr_mean)
-
-# Examples #
-rrow = ['?',6.65500000e+03,'?','?']
-
-e_matrix = elimination_matrix(rrow)
-
-M = len(x[0])
-
-fill_holes_method(M, k_positions, rrow)
-# Examples #
-
-### BUG
-### K must be refered as k[0]
+print values
+print rules
