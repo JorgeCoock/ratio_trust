@@ -33,5 +33,6 @@ def rr_generator(matrix):
     k_positions = []
     for i in range(len(k)):
         k_positions.append(eigen_vectors[i])
+    # ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
 
     return k, k_positions

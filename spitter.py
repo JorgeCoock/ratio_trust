@@ -5,13 +5,13 @@ import math
 import random
 
 def split_set_tests(x):
-    #calculates the 90% and the 10% 
+    #calculates the 90% and the 10%
     ninety_x = int(math.ceil(len(x) * 0.9))
     ten_x = int(math.floor(len(x)* 0.1))
-    #shufflea array
+    #shuffle array
     y = np.random.permutation(x)
     #split x array into training and test
-    training, test = y[:ninety_x,:], y[ten_x:,:]
+    training, test = y[:ninety_x,:], y[:ten_x,:]
     return training,test
 
 def creates_holes(x):

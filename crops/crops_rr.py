@@ -4,7 +4,7 @@ import pdb
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rr_generator import rr_generator
-
+from  spitter import split_set_tests, creates_holes
 with open('crops.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
@@ -22,7 +22,10 @@ def myFloat(myList):
 
 matrix = map(myFloat, dataset)
 
-values,rules = rr_generator(matrix)
+training_set, test_set = split_set_tests(matrix)
 
-print values
-print rules
+eigen_values,ratio_rules = rr_generator(training_set)
+
+test_set_with_holes = creates_holes(map(myFloat, test_set))
+
+pdb.set_trace()
