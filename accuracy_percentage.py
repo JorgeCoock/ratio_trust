@@ -18,12 +18,11 @@ def get_accuracy_percentage(original_row, row_to_predict, predicted_row):
     percentage_average = sum(percentages) / len(percentages)
     return percentage_average
 
-def total_error(original_set, set_with_holes, rebuilded_set):
-    total_error = []
+def total_accuracy(original_set, set_with_holes, rebuilded_set):
+    total_accuracy = []
     for index, value in enumerate(original_set):
-        total_error.append(get_accuracy_percentage(original_set[index], set_with_holes[index], rebuilded_set[index]))
-    #return np.average(total_error)
-    return total_error
+        total_accuracy.append(get_accuracy_percentage(original_set[index], set_with_holes[index], rebuilded_set[index]))
+    return np.average(total_accuracy)
 
 # EXAMPLES
 # CHANGE VALUES OF ARRAY TO GET DIFFERENT ACCURACY
