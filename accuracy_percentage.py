@@ -7,7 +7,7 @@ def get_accuracy_percentage(original_row, row_to_predict, predicted_row):
             error = abs(value - predicted_row[index])
             if value == 0 and predicted_row[index] != 0:
                 error_percentage = 100
-            if value == 0 and predicted_row[index] == 0:
+            elif value == 0 and predicted_row[index] == 0:
                 error_percentage = 0
             else:
                 error_percentage = (error * 100) / abs(value)

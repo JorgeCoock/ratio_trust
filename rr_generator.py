@@ -6,15 +6,19 @@ import pdb
 
 def rr_generator(matrix):
     matrix = np.array(matrix)
-    matrix_mean = np.mean(matrix, axis=0)
+    matrix_average = np.average(matrix, axis=0)
 
-    x_c = np.subtract(matrix, matrix_mean)
+    x_c = np.subtract(matrix, matrix_average)
+
     x_c_transpose = x_c.transpose()
 
     c = np.dot(x_c_transpose, x_c)
 
     eigen_values, eigen_vectors = LA.eig(c)
 
+    print np.average(eigen_vectors, axis=0)
+
+    #FIXME: order descending the eigen values with correponding eigen vector changes
     # ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
     sum_eigen_values = np.sum(eigen_values)
 

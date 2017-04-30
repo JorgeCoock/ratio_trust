@@ -11,7 +11,8 @@ def fill_hole(row, k_rules):
                 random_rr_position = randint(1,len(rule))-1
                 if index != random_rr_position and (row[random_rr_position] != '?'): break
             direct_relation = (abs(rule[random_rr_position]))/(abs(rule[index]))
-            result = row[random_rr_position]*direct_relation
+            #result = row[random_rr_position]*direct_relation
+            result = row[random_rr_position]/direct_relation
             row_filled.append(result)
         else:
             row_filled.append(record)
