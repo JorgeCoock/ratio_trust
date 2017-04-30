@@ -5,7 +5,12 @@ def get_accuracy_percentage(original_row, row_to_predict, predicted_row):
     for index,value in enumerate(original_row):
         if row_to_predict[index] == '?':
             error = abs(value - predicted_row[index])
-            error_percentage = (error * 100) / value
+            if value == 0 and predicted_row[index] != 0:
+                error_percentage = 100
+            if value == 0 and predicted_row[index] == 0:
+                error_percentage = 0
+            else:
+                error_percentage = (error * 100) / abs(value)
             if error_percentage > 100:
                 error_percentage = 100
             accuracy_percentage = 100 - error_percentage
