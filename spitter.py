@@ -14,7 +14,7 @@ def split_set_tests(x):
     training, test = y[:ninety_x,:], y[:ten_x,:]
     return training,test
 
-def creates_holes(x):
+def creates_holes(x):## FIXME: error here, sometimes generate all the rows as holes
     for value in x:
         #creates a random number smaller than the length
         ran = random.randint(1, len(value)-2)

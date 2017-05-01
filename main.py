@@ -2,6 +2,7 @@ from rr_generator import rr_generator
 from  spitter import split_set_tests, creates_holes
 from fill_holes import filled_matrix
 from accuracy_percentage import total_accuracy
+import pdb
 
 def init_main(matrix):
     training_set, test_set = split_set_tests(matrix)
