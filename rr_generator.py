@@ -8,6 +8,9 @@ def rr_generator(matrix):
     matrix = np.array(matrix)
     matrix_average = np.average(matrix, axis=0)
 
+    print "Column averages: \n"+str(matrix_average)
+    print ""
+
     x_c = np.subtract(matrix, matrix_average)
 
     x_c_transpose = x_c.transpose()
@@ -16,7 +19,12 @@ def rr_generator(matrix):
 
     eigen_values, eigen_vectors = LA.eig(c)
 
-    print np.average(eigen_vectors, axis=0)
+    print "Initial Eigen values: \n"+str(eigen_values)
+    print ""
+
+    print "Initial Eigen vectors: \n"+str(eigen_vectors)
+    print ""
+
 
     #FIXME: order descending the eigen values with correponding eigen vector changes
     # ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
@@ -38,5 +46,10 @@ def rr_generator(matrix):
     for i in range(len(k)):
         k_positions.append(eigen_vectors[i])
     # ---- Heuristic that evaluates K best ratio rules k_positions are the RR---
+
+    print "Selected Eigen values: \n"+str(k)
+    print ""
+    print "Selected Eigen vectors (Ratio rules): \n"+str(k_positions)
+    print ""
 
     return k, k_positions

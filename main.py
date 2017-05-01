@@ -6,10 +6,13 @@ from accuracy_percentage import total_accuracy
 def init_main(matrix):
     training_set, test_set = split_set_tests(matrix)
 
-    eigen_values,ratio_rules = rr_generator(training_set)
+    print "Total records of training set: \n"+str(len(training_set))
+    print ""
 
-    print 'The eigen values are: '+str(eigen_values)
-    print 'The ratio rules we will use are:'+str(ratio_rules)
+    print "Total records of test set: \n"+str(len(test_set))
+    print ""
+
+    eigen_values,ratio_rules = rr_generator(training_set)
 
     test_set_with_holes = creates_holes(map(myFloat, test_set))
 
