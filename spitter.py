@@ -17,13 +17,18 @@ def split_set_tests(x):
 def creates_holes(x):## FIXME: error here, sometimes generate all the rows as holes
     for value in x:
         #creates a random number smaller than the length
-        ran = random.randint(1, len(value)-2)
+        ran = random.randint(1, len(value)-1)
         #creates a random sample from the size of the previous number
         y = random.sample(value, ran)
+        d = []
         #if can find the value it replaces it with - ?
-        for index, item in enumerate(value):
+        for index, item in enumerate(value,0):
             if item in y:
-                value[index] = '?'
+                if item in d:
+                    continue
+                else:
+                    d.append(item)
+                    value[index] = '?'
     return x
 
 ##test
