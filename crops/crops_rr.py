@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from main import init_main, myFloat
 
-with open('crops.csv', 'rb') as f:
+with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/shuffle_crops.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
     data, headers = log[:], log[:]
@@ -20,6 +20,3 @@ for index, value in enumerate(data):
 matrix = map(myFloat, dataset)
 
 init_main(matrix)
-
-# pdb.set_trace()
-pdb.set_trace()

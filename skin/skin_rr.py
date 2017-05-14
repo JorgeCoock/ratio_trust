@@ -5,7 +5,7 @@ import csv
 
 from main import init_main, myFloat
 
-with open('/home/jorge/Documents/FIME/8/mineria/databases/skin2.csv', 'rb') as f:
+with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/shuffle_skin.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
     data, headers = log[:], log[:]

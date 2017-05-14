@@ -13,10 +13,11 @@ import pdb
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import csv
+import numpy as np
 
 from main import init_main, myFloat
 
-with open('/home/jorge/Documents/FIME/8/mineria/databases/HT_Sensor_UCIsubmission/HT_Sensor_dataset.csv', 'rb') as f:
+with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/shuffle_HT_Sensor_dataset.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
     data, headers = log[:], log[:]
