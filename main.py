@@ -2,9 +2,10 @@ from rr_generator import rr_generator
 from  spitter import split_set_tests, creates_holes
 from fill_holes import filled_matrix
 from accuracy_percentage import total_accuracy
+import column_ranges
 import pdb
 
-def init_main(matrix):
+def init_main(matrix, column_ranges_file_location):
     training_set, test_set = split_set_tests(matrix)
 
     print "Total records of training set: \n"+str(len(training_set))
@@ -12,6 +13,8 @@ def init_main(matrix):
 
     print "Total records of test set: \n"+str(len(test_set))
     print ""
+
+    column_ranges.init(map(myFloat,training_set),column_ranges_file_location)
 
     eigen_values,ratio_rules = rr_generator(training_set)
 

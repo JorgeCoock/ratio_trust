@@ -1,0 +1,340 @@
+La columna 0
+------------------------
+Rangos entre: 5.43 - 6.26 || instancias: 478
+Porcentaje es: 0.0571708103544 
+------------------------
+Rangos entre: 6.26 - 7.09 || instancias: 574
+Porcentaje es: 0.0686528141076 
+------------------------
+Rangos entre: 7.09 - 7.92 || instancias: 2145
+Porcentaje es: 0.25655102136 
+------------------------
+Rangos entre: 7.92 - 8.75 || instancias: 3907
+Porcentaje es: 0.467293631913 
+------------------------
+Rangos entre: 8.75 - 9.58 || instancias: 10730
+Porcentaje es: 1.28335312783 
+------------------------
+Rangos entre: 9.58 - 10.41 || instancias: 20886
+Porcentaje es: 2.49805344155 
+------------------------
+Rangos entre: 10.41 - 11.24 || instancias: 67204
+Porcentaje es: 8.03788104405 
+------------------------
+Rangos entre: 11.24 - 12.07 || instancias: 145517
+Porcentaje es: 17.4044452099 
+------------------------
+Rangos entre: 12.07 - 12.90 || instancias: 481827
+Porcentaje es: 57.6285356498 
+------------------------
+Rangos entre: 12.90 - 13.73 || instancias: 102823
+Porcentaje es: 12.2980632491 
+------------------------
+
+
+La columna 1
+------------------------
+Rangos entre: 1.83 - 2.78 || instancias: 648
+Porcentaje es: 0.077503525334 
+------------------------
+Rangos entre: 2.78 - 3.72 || instancias: 4501
+Porcentaje es: 0.538338530136 
+------------------------
+Rangos entre: 3.72 - 4.67 || instancias: 12003
+Porcentaje es: 1.43560928176 
+------------------------
+Rangos entre: 4.67 - 5.62 || instancias: 24659
+Porcentaje es: 2.94932010989 
+------------------------
+Rangos entre: 5.62 - 6.57 || instancias: 48355
+Porcentaje es: 5.78346136964 
+------------------------
+Rangos entre: 6.57 - 7.52 || instancias: 47993
+Porcentaje es: 5.74016464715 
+------------------------
+Rangos entre: 7.52 - 8.47 || instancias: 91197
+Porcentaje es: 10.9075447529 
+------------------------
+Rangos entre: 8.47 - 9.42 || instancias: 178866
+Porcentaje es: 21.3931258679 
+------------------------
+Rangos entre: 9.42 - 10.37 || instancias: 329822
+Porcentaje es: 39.4480983529 
+------------------------
+Rangos entre: 10.37 - 11.32 || instancias: 98047
+Porcentaje es: 11.7268335624 
+------------------------
+
+
+La columna 2
+------------------------
+Rangos entre: 1.63 - 2.60 || instancias: 1103
+Porcentaje es: 0.131923438956 
+------------------------
+Rangos entre: 2.60 - 3.58 || instancias: 7900
+Porcentaje es: 0.944873225522 
+------------------------
+Rangos entre: 3.58 - 4.55 || instancias: 20541
+Porcentaje es: 2.45678999056 
+------------------------
+Rangos entre: 4.55 - 5.53 || instancias: 23066
+Porcentaje es: 2.75879061011 
+------------------------
+Rangos entre: 5.53 - 6.50 || instancias: 47131
+Porcentaje es: 5.63706582178 
+------------------------
+Rangos entre: 6.50 - 7.48 || instancias: 52950
+Porcentaje es: 6.33304269511 
+------------------------
+Rangos entre: 7.48 - 8.45 || instancias: 79806
+Porcentaje es: 9.54513324507 
+------------------------
+Rangos entre: 8.45 - 9.42 || instancias: 154129
+Porcentaje es: 18.4344766299 
+------------------------
+Rangos entre: 9.42 - 10.40 || instancias: 319848
+Porcentaje es: 38.2551660047 
+------------------------
+Rangos entre: 10.40 - 11.37 || instancias: 129617
+Porcentaje es: 15.5027383383 
+------------------------
+
+
+La columna 3
+------------------------
+Rangos entre: 2.28 - 3.33 || instancias: 512
+Porcentaje es: 0.0612373533503 
+------------------------
+Rangos entre: 3.33 - 4.38 || instancias: 3651
+Porcentaje es: 0.436674955238 
+------------------------
+Rangos entre: 4.38 - 5.42 || instancias: 11080
+Porcentaje es: 1.32521459985 
+------------------------
+Rangos entre: 5.42 - 6.47 || instancias: 25130
+Porcentaje es: 3.00565369081 
+------------------------
+Rangos entre: 6.47 - 7.52 || instancias: 50832
+Porcentaje es: 6.07972098731 
+------------------------
+Rangos entre: 7.52 - 8.57 || instancias: 49027
+Porcentaje es: 5.86383539591 
+------------------------
+Rangos entre: 8.57 - 9.61 || instancias: 100345
+Porcentaje es: 12.0016840272 
+------------------------
+Rangos entre: 9.61 - 10.66 || instancias: 178583
+Porcentaje es: 21.3592778776 
+------------------------
+Rangos entre: 10.66 - 11.71 || instancias: 318980
+Porcentaje es: 38.1513495541 
+------------------------
+Rangos entre: 11.71 - 12.75 || instancias: 97951
+Porcentaje es: 11.7153515586 
+------------------------
+
+
+La columna 4
+------------------------
+Rangos entre: 1.90 - 39.59 || instancias: 801062
+Porcentaje es: 95.8103842764 
+------------------------
+Rangos entre: 39.59 - 77.27 || instancias: 22632
+Porcentaje es: 2.70688238481 
+------------------------
+Rangos entre: 77.27 - 114.96 || instancias: 5385
+Porcentaje es: 0.64406864803 
+------------------------
+Rangos entre: 114.96 - 152.64 || instancias: 3440
+Porcentaje es: 0.411438467822 
+------------------------
+Rangos entre: 152.64 - 190.33 || instancias: 2270
+Porcentaje es: 0.27150154708 
+------------------------
+Rangos entre: 190.33 - 228.01 || instancias: 518
+Porcentaje es: 0.0619549785849 
+------------------------
+Rangos entre: 228.01 - 265.70 || instancias: 175
+Porcentaje es: 0.0209307360084 
+------------------------
+Rangos entre: 265.70 - 303.38 || instancias: 41
+Porcentaje es: 0.00490377243625 
+------------------------
+Rangos entre: 303.38 - 341.07 || instancias: 207
+Porcentaje es: 0.0247580705928 
+------------------------
+Rangos entre: 341.07 - 378.75 || instancias: 361
+Porcentaje es: 0.0431771182802 
+------------------------
+
+
+La columna 5
+------------------------
+Rangos entre: 5.59 - 12.41 || instancias: 75900
+Porcentaje es: 9.07795921736 
+------------------------
+Rangos entre: 12.41 - 19.23 || instancias: 730585
+Porcentaje es: 87.3810386668 
+------------------------
+Rangos entre: 19.23 - 26.06 || instancias: 25093
+Porcentaje es: 3.00122833519 
+------------------------
+Rangos entre: 26.06 - 32.88 || instancias: 2927
+Porcentaje es: 0.350081510266 
+------------------------
+Rangos entre: 32.88 - 39.70 || instancias: 28
+Porcentaje es: 0.00334891776134 
+------------------------
+Rangos entre: 39.70 - 46.53 || instancias: 25
+Porcentaje es: 0.00299010514406 
+------------------------
+Rangos entre: 46.53 - 53.35 || instancias: 29
+Porcentaje es: 0.00346852196711 
+------------------------
+Rangos entre: 53.35 - 60.17 || instancias: 77
+Porcentaje es: 0.0092095238437 
+------------------------
+Rangos entre: 60.17 - 66.99 || instancias: 509
+Porcentaje es: 0.060878540733 
+------------------------
+Rangos entre: 66.99 - 73.82 || instancias: 918
+Porcentaje es: 0.10979666089 
+------------------------
+
+
+La columna 6
+------------------------
+Rangos entre: 1.22 - 11.36 || instancias: 827914
+Porcentaje es: 99.0219964095 
+------------------------
+Rangos entre: 11.36 - 21.49 || instancias: 5739
+Porcentaje es: 0.68640853687 
+------------------------
+Rangos entre: 21.49 - 31.63 || instancias: 1068
+Porcentaje es: 0.127737291754 
+------------------------
+Rangos entre: 31.63 - 41.76 || instancias: 817
+Porcentaje es: 0.0977166361078 
+------------------------
+Rangos entre: 41.76 - 51.90 || instancias: 29
+Porcentaje es: 0.00346852196711 
+------------------------
+Rangos entre: 51.90 - 62.03 || instancias: 11
+Porcentaje es: 0.00131564626339 
+------------------------
+Rangos entre: 62.03 - 72.17 || instancias: 40
+Porcentaje es: 0.00478416823049 
+------------------------
+Rangos entre: 72.17 - 82.30 || instancias: 55
+Porcentaje es: 0.00657823131693 
+------------------------
+Rangos entre: 82.30 - 92.44 || instancias: 114
+Porcentaje es: 0.0136348794569 
+------------------------
+Rangos entre: 92.44 - 102.58 || instancias: 304
+Porcentaje es: 0.0363596785517 
+------------------------
+
+
+La columna 7
+------------------------
+Rangos entre: 1.43 - 11.28 || instancias: 825265
+Porcentaje es: 98.7051648684 
+------------------------
+Rangos entre: 11.28 - 21.12 || instancias: 7063
+Porcentaje es: 0.844764505299 
+------------------------
+Rangos entre: 21.12 - 30.97 || instancias: 1140
+Porcentaje es: 0.136348794569 
+------------------------
+Rangos entre: 30.97 - 40.81 || instancias: 894
+Porcentaje es: 0.106926159951 
+------------------------
+Rangos entre: 40.81 - 50.66 || instancias: 745
+Porcentaje es: 0.0891051332929 
+------------------------
+Rangos entre: 50.66 - 60.50 || instancias: 468
+Porcentaje es: 0.0559747682968 
+------------------------
+Rangos entre: 60.50 - 70.35 || instancias: 35
+Porcentaje es: 0.00418614720168 
+------------------------
+Rangos entre: 70.35 - 80.20 || instancias: 58
+Porcentaje es: 0.00693704393421 
+------------------------
+Rangos entre: 80.20 - 90.04 || instancias: 99
+Porcentaje es: 0.0118408163705 
+------------------------
+Rangos entre: 90.04 - 99.89 || instancias: 324
+Porcentaje es: 0.038751762667 
+------------------------
+
+
+La columna 8
+------------------------
+Rangos entre: 24.43 - 25.02 || instancias: 14742
+Porcentaje es: 1.76320520135 
+------------------------
+Rangos entre: 25.02 - 25.61 || instancias: 22690
+Porcentaje es: 2.71381942875 
+------------------------
+Rangos entre: 25.61 - 26.20 || instancias: 63587
+Porcentaje es: 7.60527263181 
+------------------------
+Rangos entre: 26.20 - 26.79 || instancias: 114770
+Porcentaje es: 13.7269746953 
+------------------------
+Rangos entre: 26.79 - 27.38 || instancias: 218921
+Porcentaje es: 26.1838723297 
+------------------------
+Rangos entre: 27.38 - 27.97 || instancias: 228948
+Porcentaje es: 27.3831437009 
+------------------------
+Rangos entre: 27.97 - 28.56 || instancias: 114355
+Porcentaje es: 13.6773389499 
+------------------------
+Rangos entre: 28.56 - 29.15 || instancias: 47509
+Porcentaje es: 5.68227621156 
+------------------------
+Rangos entre: 29.15 - 29.74 || instancias: 7619
+Porcentaje es: 0.911264443703 
+------------------------
+Rangos entre: 29.74 - 30.32 || instancias: 2950
+Porcentaje es: 0.352832406999 
+------------------------
+
+
+La columna 9
+------------------------
+Rangos entre: 44.66 - 47.96 || instancias: 4438
+Porcentaje es: 0.530803465173 
+------------------------
+Rangos entre: 47.96 - 51.26 || instancias: 63951
+Porcentaje es: 7.6488085627 
+------------------------
+Rangos entre: 51.26 - 54.57 || instancias: 182232
+Porcentaje es: 21.7957136245 
+------------------------
+Rangos entre: 54.57 - 57.87 || instancias: 229785
+Porcentaje es: 27.4832524211 
+------------------------
+Rangos entre: 57.87 - 61.17 || instancias: 171088
+Porcentaje es: 20.4628443555 
+------------------------
+Rangos entre: 61.17 - 64.47 || instancias: 103696
+Porcentaje es: 12.4024777207 
+------------------------
+Rangos entre: 64.47 - 67.77 || instancias: 55659
+Porcentaje es: 6.65705048852 
+------------------------
+Rangos entre: 67.77 - 71.08 || instancias: 20023
+Porcentaje es: 2.39483501198 
+------------------------
+Rangos entre: 71.08 - 74.38 || instancias: 3208
+Porcentaje es: 0.383690292085 
+------------------------
+Rangos entre: 74.38 - 77.68 || instancias: 2011
+Porcentaje es: 0.240524057788 
+------------------------
+
+
