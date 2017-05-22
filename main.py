@@ -14,8 +14,6 @@ def init_main(matrix, column_ranges_file_location):
     print "Total records of test set: \n"+str(len(test_set))
     print ""
 
-    column_ranges.init(map(myFloat,training_set),column_ranges_file_location)
-
     eigen_values,ratio_rules = rr_generator(training_set)
 
     test_set_with_holes = creates_holes(map(myFloat, test_set))
