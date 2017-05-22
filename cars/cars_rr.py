@@ -7,6 +7,8 @@ import csv
 
 from main import init_main, myFloat
 
+COLUMN_RANGES_FILE_LOCATION = '/home/jorge/Documents/FIME/8/mineria/pia/cars/'
+
 with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/shuffle_autos.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
@@ -20,4 +22,4 @@ for index, value in enumerate(data):
 
 matrix = map(myFloat, dataset)
 
-init_main(matrix)
+init_main(matrix,COLUMN_RANGES_FILE_LOCATION)
