@@ -7,7 +7,7 @@ from main import init_main, myFloat
 
 COLUMN_RANGES_FILE_LOCATION = '/home/jorge/Documents/FIME/8/mineria/pia/youtube/'
 
-with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/youtube.csv', 'rb') as f:
+with open('/home/jorge/Documents/FIME/8/mineria/databases/shuffled/shuffle_youtube.csv', 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     log = list(reader)
     data, headers = log[:], log[:]

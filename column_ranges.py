@@ -7,7 +7,7 @@ dataset = []
 max_values = []
 min_values = []
 ranges = []
-percentage = Decimal(0.10)
+percentage = Decimal(0.33)
 number_of_rows_in_ranges = []
 
 # with open('test.csv', 'rU') as f:
